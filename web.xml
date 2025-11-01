@@ -23,10 +23,20 @@
         <servlet-name>GameLoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
+	<servlet>
+        <servlet-name>GameHomeServlet</servlet-name>
+        <servlet-class>GameServlet3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GameHomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
 	
 	<servlet>
         <servlet-name>GameAddCreditServlet</servlet-name>
-        <servlet-class>GameServlet3</servlet-class>
+        <servlet-class>GameServlet4</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -36,7 +46,7 @@
 	
 	<servlet>
         <servlet-name>GameUseCreditServlet</servlet-name>
-        <servlet-class>GameServlet4</servlet-class>
+        <servlet-class>GameServlet5</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -46,7 +56,7 @@
 	
 	<servlet>
         <servlet-name>GameLogoutServlet</servlet-name>
-        <servlet-class>GameServlet5</servlet-class>
+        <servlet-class>GameServlet6</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -57,5 +67,6 @@
 	
 
 </web-app>
+
 
 
