@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class GameServlet1 extends HttpServlet {
 	
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws 
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws 
 	ServletException, IOException{
 		
 		// Get the user's input from the HTML Page
@@ -32,7 +32,7 @@ public class GameServlet1 extends HttpServlet {
 		Connection connection = null;
 		try {
 			connection = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/mood?serverTimezone=UTC","root", "root");
+					"jdbc:mysql://localhost:3306/gameportal?serverTimezone=UTC","root", "root");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -61,4 +61,5 @@ public class GameServlet1 extends HttpServlet {
 
  }
 }
+
 
