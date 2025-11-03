@@ -54,11 +54,11 @@ public class GameServlet1 extends HttpServlet {
 			response.sendRedirect("register.html?error=databaseError");
 			return;
 		}
-
-		//3. Send back a response to the user
+		
 		//points them to the login page
 		response.sendRedirect("login.html?success=registered");
 	
 
  }
 }
+
